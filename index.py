@@ -70,7 +70,6 @@ time_count = 0
 time_arr = []
 for t in time_message:
     time_out = time_message[time_count].find_element_by_class_name('OrderCard2-Time')
-    #оставить только числа в тексте https://ru.stackoverflow.com/questions/1088723/%D0%9A%D0%B0%D0%BA-%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D0%B8%D0%B7-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%B2%D1%81%D0%B5-%D0%BD%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F
     time_text = time_out.text
     time_text = ''.join([i for i in time_text if i.isdigit()])
     time_arr.append(time_text)
